@@ -1,0 +1,54 @@
+@use 'sass:map';
+@import '../scss/app.scss';
+@import '../scss/global.scss';
+
+#showcase {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: $color-theme;
+  padding: 2em 1em;
+
+  h2 {
+    max-width: 40ch;
+    padding: 0 0.75em;
+    font-weight: lighter;
+    color: #fff;
+  }
+
+  img {
+    padding: 0 1em;
+    aspect-ratio: 16 / 9;
+    width: 50%;
+    max-width: 600px;
+    height: 100%;
+    padding-left: 0.5em;
+  }
+
+  span {
+    color: yellow;
+    font-weight: bold;
+  }
+
+  a {
+    text-decoration: underline;
+    color: orange;
+  }
+
+  @media screen 
+  and (max-width: calc(map.get($grid-breakpoints, "sm") + 150px)) {
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin-top: 0.5em;
+      text-align: center;
+    }
+
+    img {
+      margin-top: 3em;
+      min-width: 330px;
+    }
+  }
+}
