@@ -1,0 +1,15 @@
+#social-links button {
+  width: 100%;
+  height: 3em;
+  padding: 1em 2.5em;
+  border: 1px solid #000;
+  border-radius: 7px;
+  white-space: nowrap;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 1px;
+
+  &:hover {
+    background-color: blue;
+  }
+}

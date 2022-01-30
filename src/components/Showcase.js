@@ -1,4 +1,5 @@
 import '../scss/showcase.scss';
+import SocialButton from './SocialButton';
 
 export default function Showcase() {
   return (
@@ -12,12 +13,11 @@ export default function Showcase() {
           a free to use, user-contributed trivia question database.
         </h2>
 
-        <img 
-            src="https://i.pinimg.com/originals/40/bf/50/40bf5022f099e7030c11e17e50f4b3da.png"
-            alt="code"></img>
-      </div>
-      <div id="social-links">
-        
+        <div id="social-links">
+          <SocialButton text="Github Repo" backgroundColor="gray" link="https://github.com/Elitezen/easy-trivia/"/>
+          <SocialButton text="NPM Page" backgroundColor="red" link="https://www.npmjs.com/package/easy-trivia/"/>
+          <SocialButton text="Discord Trivia" backgroundColor="#0095f0" link="https://github.com/Elitezen/discord-trivia"/>
+        </div>
       </div>
     </>
   );
