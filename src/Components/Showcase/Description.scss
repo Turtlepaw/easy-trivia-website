@@ -1,0 +1,26 @@
+@use 'sass:map';
+@import '../../App.scss';
+
+h2 {
+  max-width: 60ch;
+  padding: 2em 0;
+  font-weight: lighter;
+  color: #fff;
+  text-align: center;
+
+  span {
+    color: #ffff00;
+  }
+  
+  a {
+    color: hsl(195, 46%, 54%);
+    text-decoration: underline;
+    letter-spacing: 0.5px;
+  }
+
+  @media screen and (max-width: calc(map.get($grid-breakpoints, "md") + 80px)) {
+    h2 {
+      max-width: 60ch;
+    }
+  }
+}

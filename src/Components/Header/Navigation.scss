@@ -1,0 +1,60 @@
+@use 'sass:map';
+@import '../../App.scss';
+
+nav {
+  width: 40%;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    list-style: none;
+
+    li {
+      width: max-content;
+
+      button {
+        font-size: 1em;
+        white-space: nowrap;
+        padding: 1em;
+        background-color: inherit;
+        color: #fff;
+        border: none;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: map.get($grid-breakpoints, "sm")) {
+    & {
+      width: 100%;
+      
+      ul {
+        flex-direction: column;
+        margin-top: 2em;
+        width: 100%;
+        height: min-content;
+  
+        li {
+          width: 100%;
+
+          button {
+            width: 100%;
+            font-size: 1.25em;
+            text-align: center;
+          }
+        }
+
+        @for $i from 1 to 4 {
+          li:nth-child(3n + #{$i}) {
+            background-color: lighten($color-theme, $i * 3%);
+          }
+        }
+      }
+    }
+  }
+}

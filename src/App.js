@@ -1,18 +1,14 @@
-import './scss/app.scss';
-import Header from './components/Header';
-import NavMobile from './components/NavMobile';
-import Showcase from './components/Showcase';
-import MainBody from './components/MainBody'
+import './App.scss';
+import Header from './Components/Header/Header';
+import Showcase from './Components/Showcase/Showcase';
+import Examples from './Components/Examples/Examples';
 
-function App() {
+export default function App() {
   return (
     <>
       <Header />
-      <NavMobile />
       <Showcase />
-      <MainBody />
+      <Examples />
     </>
   );
 }
-
-export default App;

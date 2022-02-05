@@ -4,6 +4,25 @@
 // font-family: 'Roboto', sans-serif;
 // font-family: 'Source Sans Pro', sans-serif;
 
+$color-theme: #1d1a4f;
+$color-green: #2aa31a;
+$color-red-npm: #cc3534;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: text;
+}
+
+body {
+  background-color: rgb(245, 238, 238);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  user-select: none;
+}
+
 h1, h2 {
   font-family: 'Poppins', sans-serif;
 }
