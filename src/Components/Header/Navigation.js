@@ -5,11 +5,9 @@ export default function Navigation() {
     <nav>
       <ul>
         <li>
-          <a href="https://www.npmjs.com/package/easy-trivia"
-            target="_blank"
-            rel="noreferrer">
+          <a href="#documentation">
             <button>
-              NPM
+              Documentation
             </button>
           </a>
         </li>
@@ -25,11 +23,11 @@ export default function Navigation() {
         </li>
 
         <li>
-          <a href="https://github.com/Elitezen/discord-trivia"
+          <a href="https://www.npmjs.com/package/easy-trivia"
             target="_blank"
             rel="noreferrer">
             <button>
-              Discord-Trivia
+              NPM
             </button>
           </a>
         </li>

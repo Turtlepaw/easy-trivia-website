@@ -15,6 +15,10 @@ $color-red-npm: #cc3534;
   user-select: text;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: rgb(245, 238, 238);
 }

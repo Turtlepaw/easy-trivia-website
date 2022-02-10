@@ -15,21 +15,23 @@ nav {
       width: max-content;
 
       button {
-        font-size: 1em;
+        font-size: 1.2em;
         white-space: nowrap;
         padding: 1em;
         background-color: inherit;
         color: #fff;
         border: none;
+        transition: 0.1s ease-in-out;
 
         &:hover {
           cursor: pointer;
+          background-color: lighten($color-theme, 15%);
         }
       }
     }
   }
 
-  @media screen and (max-width: map.get($grid-breakpoints, "sm")) {
+  @media screen and (max-width: map.get($grid-breakpoints, "md")) {
     & {
       width: 100%;
       

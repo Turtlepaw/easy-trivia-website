@@ -15,7 +15,7 @@ header {
     color: #fff;
   }
 
-  @media screen and (max-width: map.get($grid-breakpoints, "sm")) {
+  @media screen and (max-width: map.get($grid-breakpoints, "md")) {
     flex-direction: column;
     padding: 1em 0 0 0;
     border-bottom: 2px solid #000;

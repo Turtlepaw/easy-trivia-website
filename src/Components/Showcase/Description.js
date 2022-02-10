@@ -6,8 +6,11 @@ export default function Description() {
       EasyTrivia is a fast  
       <span> JavaScript</span> library
       which provides easy usage for the 
-      <a href="https://opentdb.com/"> OpenTriviaDataBase API</a>,
-      a free to use, user-contributed trivia question database.
+      <a href="https://opentdb.com/" 
+        target="_blank" 
+        rel="noreferrer"> OpenTriviaDataBase API</a> with 
+        type definitions. Works with CommonJS, ESModules and 
+        TypeScript.
     </h2>
   );
 }
