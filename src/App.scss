@@ -1,3 +1,4 @@
+@use 'sass:map';
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Open+Sans:wght@300&family=Poppins:wght@300&family=Roboto:wght@300&family=Source+Sans+Pro:wght@300&display=swap');
 
 // font-family: 'Poppins', sans-serif;
@@ -7,6 +8,31 @@
 $color-theme: #1d1a4f;
 $color-green: #2aa31a;
 $color-red-npm: #cc3534;
+$color-dark-gray: rgb(24, 23, 23);
+
+$default-border-radius: 7px;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+@mixin flex-spaced-out($direction) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin borders($args...) {
+  @each $name in $args {
+    border-#{$name}: 2px solid #000;
+  }
+}
 
 * {
   margin: 0;
@@ -20,34 +46,36 @@ html {
 }
 
 body {
-  background-color: rgb(245, 238, 238);
+  background-color: rgb(241, 232, 232);
 }
 
-h1, h2, h3, h4, h5, h6 {
-  user-select: none;
+h1, h2, summary {
+  font-family: 'Poppins', Helvetica, sans-serif;
 }
 
-h1, h2 {
-  font-family: 'Poppins', sans-serif;
+h3, h4, h5, h6, a {
+  font-family: 'Source Sans Pro', Helvetica, sans-serif;
 }
 
-h3, h4, h5 h6 {
-  font-family: 'Source Sans Pro', sans-serif;
+p, ul li {
+  font-family: 'Roboto', Helvetica, sans-serif;
 }
 
-p {
-  font-family: 'Roboto', sans-serif;
+ul li {
+  font-weight: bold;
 }
 
 a {
   text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
-$grid-breakpoints: (
-  xs: 0,
-  sm: 576px,
-  md: 768px,
-  lg: 992px,
-  xl: 1200px,
-  xxl: 1400px
-);
+@media screen 
+and (max-width: map.get($grid-breakpoints, "md")) {
+  a:hover {
+    text-decoration: none;
+  }
+}

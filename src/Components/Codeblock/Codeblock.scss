@@ -1,0 +1,15 @@
+@use 'sass:map';
+@import '../../App.scss';
+
+.code-block {
+  @include flex-spaced-out(column);
+
+  h2 {
+    padding: 1em 0;
+    font-size: 2.25em;
+  }
+
+  img {
+    border-radius: $default-border-radius;
+  }
+}

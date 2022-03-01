@@ -1,14 +1,22 @@
 import './Showcase.scss';
-import Description from './Description';
 
 export default function Showcase() {
   return (
-    <div id="showcase">
+    <section id="showcase">
       <img 
         src="https://opentdb.com/images/logo.png" 
         alt="Open Trivia DB" />
 
-      <Description />
+      <article>
+        EasyTrivia is a fast  
+        <span> JavaScript</span> library
+        which provides easy usage for the 
+        <a href="https://opentdb.com/" 
+          target="_blank" 
+          rel="noreferrer"> OpenTriviaDataBase API</a> with 
+          type definitions. Works with CommonJS, ESModules and 
+          TypeScript.
+      </article>
 
       <h3>
         Installation
@@ -16,6 +24,6 @@ export default function Showcase() {
       <pre><code>
         npm i easy-trivia
       </code></pre>
-    </div>
+    </section>
   );
 }

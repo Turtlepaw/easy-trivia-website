@@ -1,0 +1,23 @@
+@import '../../App.scss';
+
+.documentation-card {
+  overflow-x: hidden;
+  padding: 1em 1em 5em 1em;
+  width: clamp(450px, 95%, 1500px);
+  text-align: left;
+
+  h4, p {
+    padding-bottom: 1em;
+  }
+
+  h4 {
+    font-size: 150%;
+    white-space: pre-wrap;
+  }
+
+  p {
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(73, 72, 72);
+  }
+}

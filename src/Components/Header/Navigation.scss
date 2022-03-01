@@ -5,10 +5,7 @@ nav {
   width: 40%;
 
   ul {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
+    @include flex-spaced-out(row);
     list-style: none;
 
     li {
@@ -21,6 +18,7 @@ nav {
         background-color: inherit;
         color: #fff;
         border: none;
+        border-radius: $default-border-radius;
         transition: 0.1s ease-in-out;
 
         &:hover {
@@ -31,7 +29,8 @@ nav {
     }
   }
 
-  @media screen and (max-width: map.get($grid-breakpoints, "md")) {
+  @media screen 
+  and (max-width: map.get($grid-breakpoints, "md")) {
     & {
       width: 100%;
       
@@ -47,13 +46,19 @@ nav {
           button {
             width: 100%;
             font-size: 1.25em;
+            letter-spacing: 0.5px;
             text-align: center;
+
+            &:hover {
+              border-radius: 0;
+              background-color: darken($color-theme, $amount: 5%);
+            }
           }
         }
 
         @for $i from 1 to 4 {
           li:nth-child(3n + #{$i}) {
-            background-color: lighten($color-theme, $i * 3%);
+            background-color: lighten($color-theme, $i * 6%);
           }
         }
       }
