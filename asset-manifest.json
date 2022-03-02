@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/easy-trivia-website/static/css/main.0d27414b.css",
-    "main.js": "/easy-trivia-website/static/js/main.2ac8e0a1.js",
-    "static/media/example1_result.png": "/easy-trivia-website/static/media/example1_result.81f26b2176e9de06d6c0.png",
-    "static/media/example1_code.png": "/easy-trivia-website/static/media/example1_code.16d1fc60dbe9601bcce4.png",
-    "index.html": "/easy-trivia-website/index.html",
-    "main.0d27414b.css.map": "/easy-trivia-website/static/css/main.0d27414b.css.map",
-    "main.2ac8e0a1.js.map": "/easy-trivia-website/static/js/main.2ac8e0a1.js.map"
+    "main.css": "/static/css/main.0d27414b.css",
+    "main.js": "/static/js/main.2ac8e0a1.js",
+    "static/media/example1_result.png": "/static/media/example1_result.81f26b2176e9de06d6c0.png",
+    "static/media/example1_code.png": "/static/media/example1_code.16d1fc60dbe9601bcce4.png",
+    "index.html": "/index.html",
+    "main.0d27414b.css.map": "/static/css/main.0d27414b.css.map",
+    "main.2ac8e0a1.js.map": "/static/js/main.2ac8e0a1.js.map"
   },
   "entrypoints": [
     "static/css/main.0d27414b.css",
