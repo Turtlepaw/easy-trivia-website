@@ -47,18 +47,18 @@ export default function TableOfContents() {
           </a>
           <ul>
             <li>
-              <a href="#documentation-typings-triviaquestionencoding">
-                TriviaQuestionEncoding
+              <a href="#documentation-typings-triviacategoryname">
+                TriviaCategoryName
               </a>
             </li>
             <li>
-              <a href="#documentation-typings-triviaquestiontype">
-                TriviaQuestionType
+              <a href="#documentation-typings-triviacategoryresolvable">
+                TriviaCategoryResolvable
               </a>
             </li>
             <li>
-              <a href="#documentation-typings-questionoptions">
-                QuestionOptions
+              <a href="#documentation-typings-triviacategorydata">
+                TriviaCategoryData
               </a>
             </li>
           </ul>

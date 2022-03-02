@@ -7,7 +7,7 @@ export default function Documentation() {
     <main id="documentation">
       <h2>
         <a href="#documentation">
-          Documentation (So Far)
+          Documentation (Draft)
         </a>
       </h2>
 
@@ -38,15 +38,11 @@ export default function Documentation() {
           description="Fetches questions according to the given options."
           /> 
 
-          {"Swap for getQuestionCount"}
         <DocumentationCard
           id="documentation-functions-getcategorydata"
           title={
             [
-              'getCategoryData(arg:',
-              <a href="#documentation-typings-triviacategoryresolvable">
-                TriviaCategoryResolvable
-              </a>,
+              'getOverallQuestionCount(',
               '): Promise<',
               <a href="#documentation-typings-triviacategorydata">
                 TriviaCategoryData
@@ -54,7 +50,7 @@ export default function Documentation() {
               '>'
             ]
           }
-          description="Fetches a trivia category's data."
+          description="Fetches overall question count of the API"
           /> 
       </section>
       <section id="documentation-classes" className="documentation-section">
@@ -193,6 +189,68 @@ export default function Documentation() {
             ]
           }
           description="Sets TriviaSession#token to null"
+          />
+      </section>
+      <section id="documentation-typings" className="documentation-section">
+        <h3>
+          <a href="#documentation-typings">
+            Typings
+          </a>
+        </h3>
+
+        <DocumentationCard
+          id="documentation-typings-triviacategoryname"
+          title={
+            [
+              "type TriviaCategoryName = \n| GENERAL_KNOWLEDGE\n| ENTERTAINMENT_BOOKS\n| ENTERTAINMENT_FILM\n| ENTERTAINMENT_MUSIC\n| ENTERTAINMENT_MUSICALS_AND_THEATRES\n| ENTERTAINMENT_TELEVISION\n| ENTERTAINMENT_VIDEO_GAMES\n| ENTERTAINMENT_BOARD_GAMES\n| SCIENCE_AND_NATURE\n| SCIENCE_COMPUTERS\n| SCIENCE_MATHEMATICS\n| MYTHOLOGY\n| SPORTS\n| GEOGRAPHY\n| HISTORY\n| POLITICS\n| ART\n| CELEBRITIES\n| ANIMALS\n| VEHICLES\n| ENTERTAINMENT_COMICS\n| SCIENCE_GADGETS\n| ENTERTAINMENT_JAPANESE_ANIME_AND_MANGA\n| ENTERTAINMENT_CARTOON_AND_ANIMATIONS"
+            ]
+          }
+          description="Names representing a trivia category"
+          />
+
+        <DocumentationCard
+          id="documentation-typings-triviacategoryresolvable"
+          title={
+            [
+              'type TriviaCategoryResolvable = TriviaCategoryName | `${number}` | number;',
+            ]
+          }
+          description="An argument that can be resolved into a trivia category"
+          />
+
+        <DocumentationCard
+          id="documentation-typings-triviacategorydata"
+          title={
+            [
+              'interface TriviaCategoryData',
+              '\n',
+              'id: number',
+              '\n',
+              'name: ', <a href="#documentation-typings-triviacategoryname">TriviaCategoryName</a>,
+              '\n',
+              'questionCounts: ', <a href="#documentation-typings-triviacategoryquestiondata">TriviaCategoryQuestionData</a>,
+              '\n',
+            ]
+          }
+          description="API data about a trivia category"
+          />
+
+        <DocumentationCard
+          id="documentation-typings-triviacategoryquestiondata"
+          title={
+            [
+              'interface TriviaCategoryQuestionData',
+              '\n',
+              'total: number',
+              '\n',
+              'forEasy: number',
+              '\n',
+              'forMedium: number',
+              '\n',
+              'forHard: number'
+            ]
+          }
+          description="A category's question count data"
           />
       </section>
     </main>
